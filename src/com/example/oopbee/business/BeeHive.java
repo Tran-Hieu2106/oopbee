@@ -26,10 +26,10 @@ public class BeeHive {
 
         // Random from 1 -> 3
         Random rand = new Random();
-        int rdValue = rand.nextInt();
+        int rdValue = rand.nextInt(3);
 
         for (int i = 0 ; i < 7 ; i++) {
-            int r = rand.nextInt(3) + 1;
+            int r = rdValue + 1;
             if (r == 1) {
                 // add Queen bee
                 this.listBee.add(new QueenBee());
