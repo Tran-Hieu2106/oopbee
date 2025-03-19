@@ -66,7 +66,8 @@ public abstract class Bee {
 
             // Random 1 -> 100
             Random rand = new Random();
-            int damageAmount = rand.nextInt(100) + 1;
+            int rdValue = rand.nextInt(100);
+            int damageAmount = rdValue + 1;
 
             int delta = this.getHealth() - damageAmount;
             if (delta > 0) {
